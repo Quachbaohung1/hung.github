@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Đăng nhập</title>
+  <link rel="stylesheet" href="./CSS/login-style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script type="text/javascript" src="./JS/login.js" async></script>
+</head>
+
+<body>
+  <div>
+    <div class="login-page" id="login">
+      <h1>Đăng nhập tài khoản</h1>
+      <div class="input-box">
+        <i class="fa fa-user-o"></i>
+        <input type="text" placeholder="Họ và Tên" id="user">
+      </div>
+      <div class="input-box">
+        <i class="fa fa-key"></i>
+        <input type="password" placeholder="Mật khẩu" id="pwd">
+        <span class="eye" id="eye-icon">
+          <i class="fa fa-eye" id="hide-eye"></i>
+          <i class="fa fa-eye-slash" id="hide-eye-slash"></i>
+        </span>
+      </div>
+      <button type="button" class="login-button" onclick="loginClick()">Đăng nhập</button>
+    </div>
+    <div class="login-page" id="hello">
+      <h3>Xin chào</h3>
+      <h1 id="user-name">Tên Đăng nhập</h1>
+      <h1>Mình tên là Quách Bảo Hưng</h1>
+      <h1>Ngày tháng năm sinh: 07/10/2000</h1>
+      <h1>Đang là sinh viên năm 4 tại UIT</h1>
+      <p><a href="#" onclick="logoutClick()">Đăng xuất?</a></p>
+    </div>
+  </div>
+</body>
+
+</html>
